@@ -22,13 +22,15 @@
         <div class="container">
             <nav>
                 <img src="./Images/logo.png" class="logo">
-                <ul>
+                <ul id="sidemenu">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Services</a></li>
                     <li><a href="#">Portfolio</a></li>
                     <li><a href="#">Contact</a></li>
+                    <i class="fas fa-solid fa-xmark" onclick="closeMenu()"></i>
                 </ul>
+                <i class="fas fa-solid fa-bars" onclick="openMenu()"></i>
             </nav>
             <div class="header-text">
                 <p>IT Undergraduate</p>
@@ -73,138 +75,151 @@
                 </div>
             </div>
         </div>
+    </div>
 
+    <!-- -----------------services--------------- -->
 
-        <!-- -----------------services--------------- -->
-
-        <div id="services">
-            <div class="container">
-                <h1 class="sub-title">My Services</h1>
-                <div class="services-list">
-                    <div>
-                        <i class="fa-solid fa-code"></i>
-                        <h2>Web design</h2>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita soluta tempora
-                            perspiciatis enim deleniti? Ipsum voluptates libero tenetur quas, ea consectetur, totam ex
-                            ab corporis numquam rerum explicabo vel sunt.
-                        </p>
-                        <a href="#">Learn more</a>
-                    </div>
-                    <div>
-                        <i class="fa-solid fa-crop"></i>
-                        <h2>UI/UX design</h2>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita soluta tempora
-                            perspiciatis enim deleniti? Ipsum voluptates libero tenetur quas, ea consectetur, totam ex
-                            ab corporis numquam rerum explicabo vel sunt.
-                        </p>
-                        <a href="#">Learn more</a>
-                    </div>
-                    <div>
-                        <i class="fa-brands fa-app-store"></i>
-                        <h2>App design</h2>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita soluta tempora
-                            perspiciatis enim deleniti? Ipsum voluptates libero tenetur quas, ea consectetur, totam ex
-                            ab corporis numquam rerum explicabo vel sunt.
-                        </p>
-                        <a href="#">Learn more</a>
-                    </div>
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web design</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita soluta tempora
+                        perspiciatis enim deleniti? Ipsum voluptates libero tenetur quas, ea consectetur, totam ex
+                        ab corporis numquam rerum explicabo vel sunt.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI/UX design</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita soluta tempora
+                        perspiciatis enim deleniti? Ipsum voluptates libero tenetur quas, ea consectetur, totam ex
+                        ab corporis numquam rerum explicabo vel sunt.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App design</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita soluta tempora
+                        perspiciatis enim deleniti? Ipsum voluptates libero tenetur quas, ea consectetur, totam ex
+                        ab corporis numquam rerum explicabo vel sunt.
+                    </p>
+                    <a href="#">Learn more</a>
                 </div>
             </div>
         </div>
+    </div>
 
 
-        <!-- -----------------portfolio--------------- -->
+    <!-- -----------------portfolio--------------- -->
 
-        <div id="portfolio">
-            <div class="container">
-                <h1 class="sub-title">My Work</h1>
-                <div class="work-list">
-                    <div class="work">
-                        <img src="./Images/work1.jpg">
-                        <div class="layer">
-                            <h3>Socila Media App</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos ab voluptatum, maiores
-                                adipisci reprehenderit beatae!
-                            </p>
-                            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
-                        </div>
-                    </div>
-                    <div class="work">
-                        <img src="./Images/work2.jpg">
-                        <div class="layer">
-                            <h3>Music App</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos ab voluptatum, maiores
-                                adipisci reprehenderit beatae!
-                            </p>
-                            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
-                        </div>
-                    </div>
-                    <div class="work">
-                        <img src="./Images/work3.jpg">
-                        <div class="layer">
-                            <h3>Online shopping App</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos ab voluptatum, maiores
-                                adipisci reprehenderit beatae!
-                            </p>
-                            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
-                        </div>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="./Images/work1.jpg">
+                    <div class="layer">
+                        <h3>Socila Media App</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos ab voluptatum, maiores
+                            adipisci reprehenderit beatae!
+                        </p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
                     </div>
                 </div>
-                <a href="" class="btn">See more</a>
-            </div>
-        </div>
-
-
-        <!-- -----------------contact--------------- -->
-
-        <div id="contact">
-            <div class="container">
-                <div class="row">
-                    <div class="contact-left">
-                        <h1 class="sub-title">Contact Me</h1>
-                        <p><i class="fa-solid fa-paper-plane"></i> manojtharindu11@gmail.com</p>
-                        <p><i class="fa-solid fa-square-phone"></i> 0726764944</p>
-                        <div class="social-icons">
-                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                            <a href="#"><i class="fa-brands fa-square-x-twitter"></i></a>
-                            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                            <a href="#"><i class="fa-brands fa-github"></i></a>
-                        </div>
-                        <a href="#" class="btn btn2" download>Download CV</a>
+                <div class="work">
+                    <img src="./Images/work2.jpg">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos ab voluptatum, maiores
+                            adipisci reprehenderit beatae!
+                        </p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
                     </div>
-                    <div class="contact-right">
-                        <form action="#">
-                            <input type="text" name="name" placeholder="Your Name" required>
-                            <input type="email" name="email" placeholder="Your Email" required>
-                            <textarea name="message" rows="6" placeholder="Your Message"></textarea>
-                            <button type="submit" class="btn btn2">Submit</button>
-                        </form>
+                </div>
+                <div class="work">
+                    <img src="./Images/work3.jpg">
+                    <div class="layer">
+                        <h3>Online shopping App</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos ab voluptatum, maiores
+                            adipisci reprehenderit beatae!
+                        </p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
                     </div>
                 </div>
             </div>
-            <div class="copy-right">
-                <p>Copyright &copy; Tharindu Manoj Thilakarathna.</p>
+            <a href="" class="btn">See more</a>
+        </div>
+    </div>
+
+
+    <!-- -----------------contact--------------- -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> manojtharindu11@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i> 0726764944</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-square-x-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="#" class="btn btn2" download>Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form action="#">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
             </div>
         </div>
+        <div class="copy-right">
+            <p>Copyright &copy; Tharindu Manoj Thilakarathna.</p>
+        </div>
+    </div>
 
-        <script>
 
-            var tablinks = document.getElementsByClassName("tab-links");
-            var tabcontents = document.getElementsByClassName("tab-contents");
+    <script>
 
-            function openTab(tabName) {
-                for (tablink of tablinks) {
-                    tablink.classList.remove("active-link");
-                }
-                for (tabcontent of tabcontents) {
-                    tabcontent.classList.remove("active-tab");
-                }
-                event.currentTarget.classList.add("active-link");
-                document.getElementById(tabName).classList.add("active-tab")
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function openTab(tabName) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
             }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabName).classList.add("active-tab")
+        }
+
+        // mobile screen navigation
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openMenu() {
+            sidemenu.style.right = "0";
+        }
+
+        function closeMenu() {
+            sidemenu.style.right = "-200px";
+        }
 
 
-        </script>
+    </script>
 
 </body>
 
