@@ -37,10 +37,17 @@ nav {
     width: 140px;
 }
 
+nav img {
+    animation: slideRight 1s ease forwards;
+    animation-delay: 1s;
+}
+
 nav ul li {
     display: inline-block;
     list-style: none;
     margin: 10px 20px;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: calc(0.2s * var(--i));
 }
 
 nav ul li a {
@@ -68,6 +75,8 @@ nav ul li a:hover::after {
 .header-text {
     margin-top: 20%;
     font-size: 30px;
+    animation: slideTop 1s ease forwards;
+    animation-delay: 1s;
 }
 
 .header-text h1 {
@@ -75,7 +84,7 @@ nav ul li a:hover::after {
     margin-top: 20px;
 }
 
-.header-text h1 span {
+.header-text h1 span span {
     color: #3278c4;
 }
 
@@ -376,6 +385,38 @@ form .btn2 {
     margin-top: 20px;
 }
 
+.to-top {
+    position: fixed;
+    bottom: 2.5rem;
+    right: 2.5rem;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.4s;
+    text-decoration: none;
+}
+
+.to-top:hover {
+    transform: translateY(-5px);
+}
+
+.to-top i {
+    display: flex;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 6px;
+    background: #3278c4;
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.to-top.active {
+    pointer-events: auto;
+    opacity: 1;
+}
+
 /* -----------------css for small screens---------------  */
 
 nav .fas {
@@ -458,5 +499,42 @@ nav .fas {
 
     .copy-right {
         font-size: 14px;
+    }
+}
+
+
+@keyframes slideRight {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slideLeft {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slideTop {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
     }
 }

@@ -15,6 +15,7 @@
         @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
     </style>
     <script src="https://kit.fontawesome.com/8ab7ead315.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 </head>
 
 <body>
@@ -23,18 +24,18 @@
             <nav>
                 <img src="./Images/logo.png" class="logo">
                 <ul id="sidemenu">
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li style="--i:1"><a href="#header">Home</a></li>
+                    <li style="--i:2"><a href="#about">About</a></li>
+                    <li style="--i:3"><a href="#services">Services</a></li>
+                    <li style="--i:4"><a href="#portfolio">Portfolio</a></li>
+                    <li style="--i:5"><a href="#contact">Contact</a></li>
                     <i class="fas fa-solid fa-xmark" onclick="closeMenu()"></i>
                 </ul>
                 <i class="fas fa-solid fa-bars" onclick="openMenu()"></i>
             </nav>
             <div class="header-text">
                 <p>IT Undergraduate</p>
-                <h1>Hi, I am <span>Tharindu</span> <br>Manoj from Sri Lanka</h1>
+                <h1>Hi, I am <span class="multitext"></span></h1>
             </div>
         </div>
     </div>
@@ -190,6 +191,8 @@
         </div>
     </div>
 
+    <a href="#" class="to-top" id="to-top"><i class="fa-solid fa-arrow-up"></i></a>
+
 
     <script>
 
@@ -232,12 +235,33 @@
             fetch(scriptURL, { method: 'POST', body: new FormData(form) })
                 .then(response => {
                     msg.innerHTML = "Message sent successfully"
-                    setTimeout(function(){
+                    setTimeout(function () {
                         msg.innerHTML = ""
                     }, 5000)
                     form.reset()
                 })
                 .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+    <script>
+        var typingEffect = new Typed(".multitext", {
+            strings: ['<span>Tharindu</span><br>Manoj from Sri Lanka', '<span>web</span><br>developer', '<span>Tharindu</span><br>Manoj Thilakarathna'],
+            loop: true,
+            typeSpeed: 100,
+            backSpeed: 80,
+            backDelay: 1500
+        })
+    </script>
+
+    <script>
+        const toTop = document.querySelector(".to-top");
+        window.addEventListener("scroll", () => {
+            if (window.pageYOffset > 100) {
+                toTop.classList.add("active");
+            } else {
+                toTop.classList.remove("active");
+            }
         })
     </script>
 
