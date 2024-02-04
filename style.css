@@ -91,7 +91,7 @@ nav ul li a:hover::after {
 /* -----------------about---------------  */
 
 #about {
-    padding: 80px 0;
+    margin: 80px 0;
     color: #ababab;
 }
 
@@ -112,6 +112,11 @@ nav ul li a:hover::after {
 
 .about-col-2 {
     flex-basis: 60%;
+}
+
+#about .sub-title {
+    margin-bottom: 30px;
+    text-align: center;
 }
 
 .sub-title {
@@ -171,7 +176,8 @@ nav ul li a:hover::after {
 /* -----------------services---------------  */
 
 #services {
-    padding: 30px 0;
+    margin: 30px 0 50px;
+    padding: 80px 0;
 }
 
 .services-list {
@@ -218,7 +224,12 @@ nav ul li a:hover::after {
 /* -----------------portfolio---------------  */
 
 #portfolio {
-    padding: 50px 0;
+    margin: 30px 0 50px;
+    padding: 80px 0;
+}
+
+#portfolio .sub-title {
+    text-align: center;
 }
 
 .work-list {
@@ -382,7 +393,7 @@ form .btn2 {
     padding: 25px 0;
     background: #262626;
     font-weight: 300;
-    margin-top: 20px;
+    margin-top: 50px;
 }
 
 .to-top {
@@ -425,7 +436,7 @@ nav .fas {
 
 @media only screen and (max-width: 600px) {
     #header {
-        background-image: url(./Images/image-phone2.png);
+        background-image: url(./Images/image-phone.png);
     }
 
     .header-text {
@@ -536,5 +547,25 @@ nav .fas {
     100% {
         transform: translateY(0px);
         opacity: 1;
+    }
+}
+
+
+/* ---------------------scroll transitions---------------------- */
+
+.hidden {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+@media only screen and (max-width: 600px) {
+    .hidden {
+        transition: none;
     }
 }

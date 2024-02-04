@@ -43,17 +43,30 @@
 
     <!-- -----------------about--------------- -->
 
-    <div id="about">
+    <div id="about" class="hidden">
         <div class="container">
+            <h1 class="sub-title">About Me</h1>
             <div class="row">
                 <div class="about-col-1">
-                    <img src="./Images/image2.jpg" alt="image of me">
+                    <img src="./Images/image3.jpg" alt="image of me">
                 </div>
                 <div class="about-col-2">
-                    <h1 class="sub-title">About Me</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus laborum reiciendis
-                        officia quam rem veniam ut ex, adipisci nihil odio? Sit quod eligendi dolorum porro a suscipit
-                        ratione ab quas.
+                    <p>
+                        Hello there! I'm Tharindu Manoj, a tech enthusiast and second-year undergraduate student at the
+                        University of Moratuwa. My journey in the world of technology has been an exhilarating
+                        exploration of possibilities.<br>
+
+                        As a passionate individual, I thrive on challenges and am eager to learn and grow. I am
+                        particularly interested in web development, and my
+                        time at university has provided me with a strong foundation in these areas.<br>
+
+                        When I'm not immersed in my studies, you can find me experimenting with coding, exploring new
+                        technologies, and staying updated on the latest trends in the tech world. I believe that every
+                        line of code tells a story, and I'm excited about the stories I can create.<br>
+
+                        Join me on this exciting journey as I navigate through the realms of technology, and let's build
+                        something amazing together! Feel free to explore my portfolio and get to know more about the
+                        projects and experiences that shape my tech-driven world.
                     </p>
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
@@ -61,16 +74,17 @@
                     </div>
                     <div class="tab-contents active-tab" id="skills">
                         <ul>
-                            <li><span>UI/Ux</span><br>Designing Web/App interfaces</li>
-                            <li><span>Web Development</span><br>Web/App development</li>
-                            <li><span>App Development</span><br>Building Ios/Android apps</li>
+                            <li><span>UI/Ux</span><br>Designing Web/App interfaces (figma)</li>
+                            <li><span>Web technologies</span><br>HTML, CSS, JavaScript (Angular), Bootstrap</li>
+                            <li><span>Programming Languages</span><br>C, Java</li>
+                            <li><span>Tools</span><br>Visual Studio, Vs code, Postman</li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="education">
                         <ul>
-                            <li><span>2016</span><br>Designing Web/App interfaces</li>
-                            <li><span>2016</span><br>Web/App development</li>
-                            <li><span>2014</span><br>Building Ios/Android apps</li>
+                            <li><span>2022 - Expected 2026</span><br>University of Moratuwa - BSc (Hons) Information
+                                Technology (Second year undergraduate)</li>
+                            <li><span>2012 - 2020</span><br>Ibbagamuwa central college</li>
                         </ul>
                     </div>
                 </div>
@@ -80,36 +94,37 @@
 
     <!-- -----------------services--------------- -->
 
-    <div id="services">
+    <div id="services" class="hidden">
         <div class="container">
             <h1 class="sub-title">My Services</h1>
             <div class="services-list">
                 <div>
                     <i class="fa-solid fa-code"></i>
                     <h2>Web design</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita soluta tempora
-                        perspiciatis enim deleniti? Ipsum voluptates libero tenetur quas, ea consectetur, totam ex
-                        ab corporis numquam rerum explicabo vel sunt.
+                    <p>
+                        Creating user-friendly web interfaces with HTML, CSS, JavaScript, and Bootstrap. Let's bring
+                        your ideas to life!
                     </p>
-                    <a href="#">Learn more</a>
+                    <a href="#contact">Learn more</a>
                 </div>
                 <div>
                     <i class="fa-solid fa-crop"></i>
                     <h2>UI/UX design</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita soluta tempora
-                        perspiciatis enim deleniti? Ipsum voluptates libero tenetur quas, ea consectetur, totam ex
-                        ab corporis numquam rerum explicabo vel sunt.
+                    <p>
+                        Crafting seamless and intuitive user experiences is my passion. From initial wireframing to
+                        prototyping, I'm dedicated to enhancing user satisfaction and usability.
                     </p>
-                    <a href="#">Learn more</a>
+                    <a href="#contact">Learn more</a>
                 </div>
                 <div>
-                    <i class="fa-brands fa-app-store"></i>
-                    <h2>App design</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita soluta tempora
-                        perspiciatis enim deleniti? Ipsum voluptates libero tenetur quas, ea consectetur, totam ex
-                        ab corporis numquam rerum explicabo vel sunt.
+                    <i class="fa-solid fa-users"></i>
+                    <h2>Collaborative Project Development</h2>
+                    <p>
+                        Thriving in teamwork, I excel in collaborative project development. As a student, I enjoy
+                        working with diverse talents to bring ideas to fruition, fostering a synergistic approach for
+                        successful outcomes.
                     </p>
-                    <a href="#">Learn more</a>
+                    <a href="#contact">Learn more</a>
                 </div>
             </div>
         </div>
@@ -118,62 +133,68 @@
 
     <!-- -----------------portfolio--------------- -->
 
-    <div id="portfolio">
+    <div id="portfolio" class="hidden">
         <div class="container">
             <h1 class="sub-title">My Work</h1>
             <div class="work-list">
                 <div class="work">
                     <img src="./Images/work1.jpg">
                     <div class="layer">
-                        <h3>Socila Media App</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos ab voluptatum, maiores
-                            adipisci reprehenderit beatae!
+                        <h3>Miner Safety Helmet (Microcontroller-Based Hardware project)</h3>
+                        <p>
+                            Created a miner safety helmet with Arduino for environmental monitoring and two-way voice
+                            communication using NRF24L01.
                         </p>
-                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        <a href="https://github.com/manojtharindu11/Miner-Safety-Helmet" target="_blank"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
                     </div>
                 </div>
                 <div class="work">
-                    <img src="./Images/work2.jpg">
+                    <img src="./Images/work2.png">
                     <div class="layer">
-                        <h3>Music App</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos ab voluptatum, maiores
-                            adipisci reprehenderit beatae!
+                        <h3>Event Management System (In progress)</h3>
+                        <p>
+                            Developing an Event Management System with Angular, Asp.net Core, and MySQL, streamlining
+                            collaboration between vendors and organizers for seamless event planning.
                         </p>
-                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        <a href="#contact"><i class="fa-solid fa-up-right-from-square"></i></a>
                     </div>
                 </div>
                 <div class="work">
-                    <img src="./Images/work3.jpg">
+                    <img src="./Images/work3.png">
                     <div class="layer">
-                        <h3>Online shopping App</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos ab voluptatum, maiores
-                            adipisci reprehenderit beatae!
+                        <h3>Personal portfolio website</h3>
+                        <p>
+                            Created a dynamic portfolio website to showcase skills, education, and tech projects.
+                            Connect with like-minded individuals and share a passion for technology.
                         </p>
-                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        <a href="https://github.com/manojtharindu11/personal-portfolio" target="_blank"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
                     </div>
                 </div>
             </div>
-            <a href="" class="btn">See more</a>
+            <a href="https://github.com/manojtharindu11" class="btn" target="_blank">See more</a>
         </div>
     </div>
 
 
     <!-- -----------------contact--------------- -->
 
-    <div id="contact">
+    <div id="contact" class="hidden">
         <div class="container">
             <div class="row">
                 <div class="contact-left">
                     <h1 class="sub-title">Contact Me</h1>
                     <p><i class="fa-solid fa-paper-plane"></i> manojtharindu11@gmail.com</p>
-                    <p><i class="fa-solid fa-square-phone"></i> 0726764944</p>
+                    <p><i class="fa-solid fa-square-phone"></i> +94763241208</p>
                     <div class="social-icons">
-                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="#"><i class="fa-brands fa-square-x-twitter"></i></a>
-                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://web.facebook.com/tharindu.manoj.754/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://twitter.com/manojtharindu11"><i class="fa-brands fa-square-x-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/tharindu-manoj-thilakarathna-1917601a7/"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/manojtharindu11"><i class="fa-brands fa-github"></i></a>
                     </div>
-                    <a href="#" class="btn btn2" download>Download CV</a>
+                    <a href="./cv/Resume.pdf" class="btn btn2" download>Download CV</a>
                 </div>
                 <div class="contact-right">
                     <form name="submit-to-google-sheet">
@@ -263,6 +284,23 @@
                 toTop.classList.remove("active");
             }
         })
+    </script>
+
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("show");
+                } else {
+                    entry.target.classList.remove("show");
+                }
+            });
+        });
+
+        var hiddenElements = document.querySelectorAll(".hidden");
+
+        hiddenElements.forEach((el) => observer.observe(el));
+
     </script>
 
 </body>
