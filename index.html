@@ -1,11 +1,308 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Personal Portfolio Website - Tharindu Manoj Thilakarathna</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+    </style>
+    <script src="https://kit.fontawesome.com/8ab7ead315.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 </head>
+
 <body>
-    
+    <div Id="header">
+        <div class="container">
+            <nav>
+                <img src="./Images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li style="--i:1"><a href="#header">Home</a></li>
+                    <li style="--i:2"><a href="#about">About</a></li>
+                    <li style="--i:3"><a href="#services">Services</a></li>
+                    <li style="--i:4"><a href="#portfolio">Portfolio</a></li>
+                    <li style="--i:5"><a href="#contact">Contact</a></li>
+                    <i class="fas fa-solid fa-xmark" onclick="closeMenu()"></i>
+                </ul>
+                <i class="fas fa-solid fa-bars" onclick="openMenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>IT Undergraduate</p>
+                <h1>Hi, I am <span class="multitext"></span></h1>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- -----------------about--------------- -->
+
+    <div id="about" class="hidden">
+        <div class="container">
+            <h1 class="sub-title">About Me</h1>
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./Images/image3.jpg" alt="image of me">
+                </div>
+                <div class="about-col-2">
+                    <p>
+                        Hello there! I'm Tharindu Manoj, a tech enthusiast and second-year undergraduate student at the
+                        University of Moratuwa. My journey in the world of technology has been an exhilarating
+                        exploration of possibilities.<br>
+
+                        As a passionate individual, I thrive on challenges and am eager to learn and grow. I am
+                        particularly interested in web development, and my
+                        time at university has provided me with a strong foundation in these areas.<br>
+
+                        When I'm not immersed in my studies, you can find me experimenting with coding, exploring new
+                        technologies, and staying updated on the latest trends in the tech world. I believe that every
+                        line of code tells a story, and I'm excited about the stories I can create.<br>
+
+                        Join me on this exciting journey as I navigate through the realms of technology, and let's build
+                        something amazing together! Feel free to explore my portfolio and get to know more about the
+                        projects and experiences that shape my tech-driven world.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                        <p class="tab-links" onclick="openTab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/Ux</span><br>Designing Web/App interfaces (figma)</li>
+                            <li><span>Web technologies</span><br>HTML, CSS, JavaScript (Angular), Bootstrap</li>
+                            <li><span>Programming Languages</span><br>C, Java</li>
+                            <li><span>Tools</span><br>Visual Studio, Vs code, Postman</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022 - Expected 2026</span><br>University of Moratuwa - BSc (Hons) Information
+                                Technology (Second year undergraduate)</li>
+                            <li><span>2012 - 2020</span><br>Ibbagamuwa central college</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -----------------services--------------- -->
+
+    <div id="services" class="hidden">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web design</h2>
+                    <p>
+                        Creating user-friendly web interfaces with HTML, CSS, JavaScript, and Bootstrap. Let's bring
+                        your ideas to life!
+                    </p>
+                    <a href="#contact">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI/UX design</h2>
+                    <p>
+                        Crafting seamless and intuitive user experiences is my passion. From initial wireframing to
+                        prototyping, I'm dedicated to enhancing user satisfaction and usability.
+                    </p>
+                    <a href="#contact">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-users"></i>
+                    <h2>Collaborative Project Development</h2>
+                    <p>
+                        Thriving in teamwork, I excel in collaborative project development. As a student, I enjoy
+                        working with diverse talents to bring ideas to fruition, fostering a synergistic approach for
+                        successful outcomes.
+                    </p>
+                    <a href="#contact">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- -----------------portfolio--------------- -->
+
+    <div id="portfolio" class="hidden">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="./Images/work1.jpg">
+                    <div class="layer">
+                        <h3>Miner Safety Helmet (Microcontroller-Based Hardware project)</h3>
+                        <p>
+                            Created a miner safety helmet with Arduino for environmental monitoring and two-way voice
+                            communication using NRF24L01.
+                        </p>
+                        <a href="https://github.com/manojtharindu11/Miner-Safety-Helmet" target="_blank"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./Images/work2.png">
+                    <div class="layer">
+                        <h3>Event Management System (In progress)</h3>
+                        <p>
+                            Developing an Event Management System with Angular, Asp.net Core, and MySQL, streamlining
+                            collaboration between vendors and organizers for seamless event planning.
+                        </p>
+                        <a href="#contact"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./Images/work3.png">
+                    <div class="layer">
+                        <h3>Personal portfolio website</h3>
+                        <p>
+                            Created a dynamic portfolio website to showcase skills, education, and tech projects.
+                            Connect with like-minded individuals and share a passion for technology.
+                        </p>
+                        <a href="https://github.com/manojtharindu11/personal-portfolio" target="_blank"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/manojtharindu11" class="btn" target="_blank">See more</a>
+        </div>
+    </div>
+
+
+    <!-- -----------------contact--------------- -->
+
+    <div id="contact" class="hidden">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> manojtharindu11@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i> +94763241208</p>
+                    <div class="social-icons">
+                        <a href="https://web.facebook.com/tharindu.manoj.754/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://twitter.com/manojtharindu11"><i class="fa-brands fa-square-x-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/tharindu-manoj-thilakarathna-1917601a7/"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/manojtharindu11"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="./cv/Resume.pdf" class="btn btn2" download>Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copy-right">
+            <p>Copyright &copy; Tharindu Manoj Thilakarathna.</p>
+        </div>
+    </div>
+
+    <a href="#" class="to-top" id="to-top"><i class="fa-solid fa-arrow-up"></i></a>
+
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function openTab(tabName) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabName).classList.add("active-tab")
+        }
+
+        // mobile screen navigation
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openMenu() {
+            sidemenu.style.right = "0";
+        }
+
+        function closeMenu() {
+            sidemenu.style.right = "-200px";
+        }
+
+
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbysiKvZDcbNJmo8F8IvAMLHsrilyfmgI1O1grGQ3JyGHNTLbG69nVb2sUBReqq1rNhNew/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+    <script>
+        var typingEffect = new Typed(".multitext", {
+            strings: ['<span>Tharindu</span><br>Manoj from Sri Lanka', '<span>web</span><br>developer', '<span>Tharindu</span><br>Manoj Thilakarathna'],
+            loop: true,
+            typeSpeed: 100,
+            backSpeed: 80,
+            backDelay: 1500
+        })
+    </script>
+
+    <script>
+        const toTop = document.querySelector(".to-top");
+        window.addEventListener("scroll", () => {
+            if (window.pageYOffset > 100) {
+                toTop.classList.add("active");
+            } else {
+                toTop.classList.remove("active");
+            }
+        })
+    </script>
+
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("show");
+                } else {
+                    entry.target.classList.remove("show");
+                }
+            });
+        });
+
+        var hiddenElements = document.querySelectorAll(".hidden");
+
+        hiddenElements.forEach((el) => observer.observe(el));
+
+    </script>
+
 </body>
+
 </html>
