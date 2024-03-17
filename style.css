@@ -116,7 +116,7 @@ nav ul li a:hover::after {
 
 #about .sub-title {
     margin-bottom: 30px;
-    text-align: center;
+    text-align: left;
 }
 
 .sub-title {
