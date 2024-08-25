@@ -20,7 +20,7 @@
 </head>
 
 <body>
-    <div Id="header">
+    <div id="header">
         <div class="container">
             <nav>
                 <img src="./Images/logo.png" class="logo">
@@ -35,8 +35,14 @@
                 <i class="fas fa-solid fa-bars" onclick="openMenu()"></i>
             </nav>
             <div class="header-text">
-                <p>IT Undergraduate</p>
-                <h1>Hi, I am <span class="multitext"></span></h1>
+                <div class="img-container">
+                    <img src="./Images/image-phone.png">
+                </div>
+                <br>
+                <div>
+                    <p>IT Undergraduate</p>
+                    <h1>Hi, I am <span class="multitext"></span></h1>
+                </div>
             </div>
         </div>
     </div>
@@ -46,7 +52,7 @@
 
     <div id="about" class="hidden">
         <div class="container">
-            <h1 class="sub-title">About Me</h1>
+            <h1 class="sub-title">About me</h1>
             <div class="row">
                 <div class="about-col-1">
                     <img src="./Images/image3.jpg" alt="image of me">
@@ -97,7 +103,7 @@
 
     <div id="services" class="hidden">
         <div class="container">
-            <h1 class="sub-title">My Services</h1>
+            <h1 class="sub-title">My services</h1>
             <div class="services-list">
                 <div>
                     <i class="fa-solid fa-code"></i>
@@ -106,7 +112,7 @@
                         Creating user-friendly web interfaces with HTML, CSS, JavaScript, and Bootstrap. Let's bring
                         your ideas to life!
                     </p>
-                    <a href="#contact">Learn more</a>
+                    <!-- <a href="#contact">Learn more</a> -->
                 </div>
                 <div>
                     <i class="fa-solid fa-crop"></i>
@@ -115,7 +121,7 @@
                         Crafting seamless and intuitive user experiences is my passion. From initial wireframing to
                         prototyping, I'm dedicated to enhancing user satisfaction and usability.
                     </p>
-                    <a href="#contact">Learn more</a>
+                    <!-- <a href="#contact">Learn more</a> -->
                 </div>
                 <div>
                     <i class="fa-solid fa-users"></i>
@@ -125,7 +131,7 @@
                         working with diverse talents to bring ideas to fruition, fostering a synergistic approach for
                         successful outcomes.
                     </p>
-                    <a href="#contact">Learn more</a>
+                    <!-- <a href="#contact">Learn more</a> -->
                 </div>
             </div>
         </div>
@@ -136,7 +142,7 @@
 
     <div id="portfolio" class="hidden">
         <div class="container">
-            <h1 class="sub-title">My Projects</h1>
+            <h1 class="sub-title">My projects</h1>
             <div class="work-list">
                 <div class="work">
                     <img src="./Images/work1.jpg">
@@ -153,7 +159,7 @@
                 <div class="work">
                     <img src="./Images/work2.png">
                     <div class="layer">
-                        <h3>Event Management System (In progress)</h3>
+                        <h3>Event Management System</h3>
                         <p>
                             Developing an Event Management System with Angular, Asp.net Core, and MySQL, streamlining
                             collaboration between vendors and organizers for seamless event planning.
@@ -164,7 +170,7 @@
                 <div class="work">
                     <img src="./Images/work3.png">
                     <div class="layer">
-                        <h3>Personal portfolio website</h3>
+                        <h3>Personal Portfolio Website</h3>
                         <p>
                             Created a dynamic portfolio website to showcase skills, education, and tech projects.
                             Connect with like-minded individuals and share a passion for technology.
@@ -176,7 +182,7 @@
                 <div class="work">
                     <img src="./Images/Expense tracker.png">
                     <div class="layer">
-                        <h3>Expense tracker</h3>
+                        <h3>Expense Tracker</h3>
                         <p>Utilizing HTML, CSS, and JavaScript, I've developed a user-friendly expense tracker that
                             empowers individuals to manage their finances with ease.
                         </p>
@@ -187,7 +193,7 @@
                 <div class="work">
                     <img src="./Images/Social media dashobard.png">
                     <div class="layer">
-                        <h3>Social media dashboard</h3>
+                        <h3>Social Media Dashboard</h3>
                         <p>
                             Dynamic dashboard using HTML, CSS, JavaScript and Bootstrap. This dashboard allows viewing
                             Twitter timeline, LinkedIn timeline, Facebook page timeline and Facebook user timeline all
@@ -198,7 +204,8 @@
                     </div>
                 </div>
             </div>
-            <a href="https://github.com/manojtharindu11" class="btn" target="_blank">See more</a>
+            <!-- This is button for see more projects in github. -->
+            <!-- <a href="https://github.com/manojtharindu11" class="btn" target="_blank">See more</a> -->
         </div>
     </div>
 
@@ -209,7 +216,7 @@
         <div class="container">
             <div class="row">
                 <div class="contact-left">
-                    <h1 class="sub-title">Contact Me</h1>
+                    <h1 class="sub-title">Contact me</h1>
                     <p><i class="fa-solid fa-paper-plane"></i> manojtharindu11@gmail.com</p>
                     <p><i class="fa-solid fa-square-phone"></i> +94763241208</p>
                     <div class="social-icons">
@@ -272,7 +279,7 @@
     </script>
 
     <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbysiKvZDcbNJmo8F8IvAMLHsrilyfmgI1O1grGQ3JyGHNTLbG69nVb2sUBReqq1rNhNew/exec'
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwqp8reWuv-g4dXeqiGKyUJ-naRTaiZl7ydHZa1s-cDtAvXLFB_5xM1EG_ssDZ2sU7XqQ/exec'
         const form = document.forms['submit-to-google-sheet']
         const msg = document.getElementById("msg")
 
