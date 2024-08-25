@@ -91,7 +91,7 @@ nav ul li a:hover::after {
 /* -----------------about---------------  */
 
 #about {
-    margin: 80px 0;
+    /* margin: 80px 0; */
     color: #ababab;
 }
 
@@ -112,6 +112,11 @@ nav ul li a:hover::after {
 
 .about-col-2 {
     flex-basis: 60%;
+}
+
+.about-col-2 p, #about .sub-title p, .tab-contents p {
+    font-size: 16px;
+    line-height: 30px;
 }
 
 #about .sub-title {
@@ -176,9 +181,13 @@ nav ul li a:hover::after {
 /* -----------------services---------------  */
 
 #services {
-    margin: 30px 0 50px;
+    /* margin: 30px 0 50px; */
     padding: 80px 0;
 }
+
+#services p {
+    font-size: 16px;
+    line-height: 30px;}
 
 .services-list {
     display: grid;
@@ -223,9 +232,14 @@ nav ul li a:hover::after {
 
 /* -----------------portfolio---------------  */
 
-#portfolio {
+/* #portfolio {
     margin: 30px 0 50px;
-    padding: 80px 0;
+    padding: 80px 0 0;
+} */
+
+#portfolio p {
+    font-size: 16px;
+    line-height: 30px;
 }
 
 #portfolio .sub-title {
@@ -234,7 +248,7 @@ nav ul li a:hover::after {
 
 .work-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
     grid-gap: 40px;
     margin-top: 50px;
 }
@@ -315,6 +329,10 @@ nav ul li a:hover::after {
 }
 
 /* -----------------contact---------------  */
+
+#contact {
+    padding-top: 80px;
+}
 
 .contact-left {
     flex-basis: 35%;
@@ -435,12 +453,18 @@ nav .fas {
 }
 
 @media only screen and (max-width: 600px) {
+
+    #portfolio p, #services p, .about-col-2 p, #about .sub-title p, .tab-contents p {
+        size: auto;
+        font-size:small;
+        line-height: auto;
+    }
+
     #header {
-        background-image: url(./Images/image-phone.png);
+        background-image: none;
     }
 
     .header-text {
-        margin-top: 100%;
         font-size: 16px;
     }
 
@@ -477,11 +501,24 @@ nav .fas {
         cursor: pointer;
     }
 
-    .header-text {
+    #header-text {
         margin-top: 50%;
     }
 
+    #header .img-container {
+        width: 100%
+    }
+
+    #header .img-container img {
+        width: 100%;
+    }
+
     .sub-title {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    #portfolio .sub-title, #about .sub-title {
         font-size: 40px;
         text-align: center;
     }
@@ -504,6 +541,10 @@ nav .fas {
         margin-right: 20px;
     }
 
+    .work img {
+        width: 60%;
+    }
+
     .contact-left,
     .contact-right {
         flex-basis: 100%;
@@ -511,6 +552,12 @@ nav .fas {
 
     .copy-right {
         font-size: 14px;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    #header .img-container {
+        display: none;
     }
 }
 
