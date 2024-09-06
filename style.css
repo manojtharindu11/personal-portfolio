@@ -461,11 +461,12 @@ nav .fas {
     }
 
     #header {
-        background-image: none;
+        background-image: url(./Images/image-phone.png);
     }
 
     .header-text {
-        font-size: 16px;
+        font-size: 14px;
+        margin-top: 30vh;
     }
 
     .header-text h1 {
@@ -505,14 +506,6 @@ nav .fas {
         margin-top: 50%;
     }
 
-    #header .img-container {
-        width: 100%
-    }
-
-    #header .img-container img {
-        width: 100%;
-    }
-
     .sub-title {
         font-size: 40px;
         text-align: center;
@@ -548,12 +541,6 @@ nav .fas {
 
     .copy-right {
         font-size: 14px;
-    }
-}
-
-@media only screen and (min-width: 600px) {
-    #header .img-container {
-        display: none;
     }
 }
 
