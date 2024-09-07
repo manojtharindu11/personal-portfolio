@@ -115,7 +115,7 @@ nav ul li a:hover::after {
 }
 
 .about-col-2 p, #about .sub-title p, .tab-contents p {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 30px;
 }
 
@@ -138,11 +138,13 @@ nav ul li a:hover::after {
 
 .tab-links {
     margin-right: 50px;
-    font-size: 18px;
+    font-size: 18px !important;
     font-weight: 500;
     cursor: pointer;
     position: relative;
 }
+
+
 
 .tab-links::after {
     content: '';
@@ -176,6 +178,19 @@ nav ul li a:hover::after {
 
 .tab-contents.active-tab {
     display: block;
+}
+
+.tab-contents ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.tab-headers {
+    font-size: 18px !important;
+}
+
+.tab-headers:hover {
+    font-weight: bold;
 }
 
 /* -----------------services---------------  */
